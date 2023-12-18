@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+body{
+    font-family: "Roboto", "san-serif";
+}
+
+.site-header{
+    margin: 20px 0 85px;
+}
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-link{
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+.header-list{
+    margin-left: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header-item{
+    padding-left: 30px;
+}
+
+.how-link{
+    margin-left: 10px;
+    color: #666;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+.header-item-link{
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+
+
+
+/* call section */
+
+.call-section{
+    margin-top: 170px;
+    height: 567px;
+    background-image: url("../images/bg.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 416px) calc(50% + 0px);
+    background-size: 587px 585px;
+    
+}
+
+
+.call-title{
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+
+.call-text{
+    width: 450px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #888;;
+
+
+    color: #777;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.call-link{
+    display: flex;
+    width: 260px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    background: #EA625C;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+
+/* Next section */
+
+
+
+
+.next{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+.next-content{
+    width: 280px;
+    margin-left: 80px;
+}
+.next-left-content{
+    width: 280px;
+}
+.next-title{
+    margin-bottom: 30px;
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+}
+.next-text{
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.next-line{
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: #EA625C;
+    transition: width 0.4s;
+}
+.line{
+    display: flex;
+    align-items: center;
+    color: #EA625C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; 
+    text-transform: uppercase;
+}
+
+
+
+/* Hover's */
+
+.line:hover > .next-line{
+    width: 50px;
+}
+
+.header-item-link:hover, .how-link:hover{
+    
+    color: #EA625C;
+    border: solid #EA625C ;
+}
+.call-link:hover{
+    background: transparent;
+    color: #EA625C;
+    border: solid #EA625C ;
+}
+
+
+
+/* ///////Band section //////// */
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.band{
+    display: flex;
+}
+.band-content{
+    margin: 176px 110px 176px;
+    width: 490px;
+    
+
+}
+.band-title{
+    width: 380px;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.band-text{
+    width: 450px;
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 40px;
+    border-left: 3px solid #888;;
+}
+
+
+
+/* ///////footer/////// */
+.site-footer{
+    height: 831px;
+    background-image: url("../images/runners.jpg");
+}
+
+.footer-content{
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 240px 1250px 470px 635px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-title{
+    margin-bottom: 30px;
+    width: 490px;
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.footer-text{
+    margin-bottom: 30px;
+    width: 450px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    padding-left: 40px;
+    border-left: 3px solid #888;;
+}
+
+
+
+
+
+
+
+
+
+
+
